@@ -1,0 +1,51 @@
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.page-container .content-container {
+    position: relative;
+    width: 599px;
+    height: 100vh;
+    overflow-y: auto;
+
+    box-shadow: 0px 0px 5px 1px rgba(40,40,40,0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(40,40,40,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(40,40,40,0.75);
+}
+
+.page-container .content-container .content {
+    padding: 20px 30px;
+}
+
+.navbar-container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+
+    align-items: center;
+    justify-content: space-around;
+    
+    box-shadow: 0px 0px 5px 1px rgba(40,40,40,0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(40,40,40,0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(40,40,40,0.75);
+}
+
+.navbar-container .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbar-container .nav-item i {
+    font-size: 26px;
+    color: var(--black);
+}
+.navbar-container .nav-item i.active {
+    color: var(--red);
+}
