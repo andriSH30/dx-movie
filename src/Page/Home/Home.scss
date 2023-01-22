@@ -1,0 +1,32 @@
+.home-container .banner{
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.home-container .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10% 30%;
+}
+
+.home-container .menu-title {
+    color: var(--black);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.home-container .home-content {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+@media(max-width: 599px){
+    .home-container .banner {
+        height: 180px;
+        margin-bottom: 10px;
+    } 
+}

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   const setActiveNavbarFromLoad = () => {
     const currentUrl = window.location.pathname;
-    console.log(currentUrl);
+
     if (currentUrl === "/") {
       let element = document.getElementsByClassName("fa-house")[0];
       element.classList.add("active");
@@ -50,13 +50,11 @@ const Navbar = () => {
     navigate(Pages[name]);
   };
 
-  let activeNavbar = localStorage.getItem("active-navbar");
-
   return (
     <div className="page-container">
       <div className="content-container">
         <SiteIdentity />
-        <div className="content">
+        <div className="content-page">
           <Outlet />
         </div>
         <div className="navbar-container">

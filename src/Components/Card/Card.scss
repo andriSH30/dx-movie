@@ -1,0 +1,17 @@
+.card {
+    width: 210px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: tomato;
+    cursor: pointer;
+}
+.card img {
+    width: 210px;
+    height: 150px;
+    object-fit: cover !important;
+    // object-position: 10% 10%;
+}
+
+.owl-item {
+    border-radius: 10px !important;
+}

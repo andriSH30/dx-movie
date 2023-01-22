@@ -1,8 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./SiteIdentity.scss";
 
 const SiteIdentity = () => {
-  return <div className="site-identity-container">Dx Movie</div>;
+  const navigate = useNavigate();
+  const goHome = () => {
+    navigate("/");
+  };
+
+  return (
+    <div className="site-identity-container" onClick={() => goHome()}>
+      Dx Movie
+    </div>
+  );
 };
 
 export default SiteIdentity;
